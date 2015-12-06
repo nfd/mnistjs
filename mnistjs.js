@@ -122,8 +122,11 @@ function sizeCanvas() {
 		SCREEN_MULTIPLIER = Math.floor(window.innerWidth / PIXELS);
 	} else {
 		portraitOrientation = false;
-		SCREEN_MULTIPLIER = Math.floor(window.innerHeight / PIXELS);
+		SCREEN_MULTIPLIER = Math.floor((window.innerHeight - 100)/ PIXELS);
 	}
+
+	SCREEN_MULTIPLIER = Math.min(SCREEN_MULTIPLIER, 4);
+
 	canvas.width = PIXELS * SCREEN_MULTIPLIER;
 	canvas.height = PIXELS * SCREEN_MULTIPLIER;
 
