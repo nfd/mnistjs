@@ -11,8 +11,19 @@
 	</head>
 	<body>
 		<canvas id="canvas"></canvas>
-		<button id="clearbutton">Clear</button>
-		<p id="guess"></p>
+		<div id="elements">
+			<button id="clearbutton">Clear</button>
+			<p>Guess: <span id="guess"></span></p>
+
+			<div id="info">
+				<p>This is a program to recognise handwritten number. To use it, draw a number in the box. Whenever you stop drawing, the line above ("Guess") above will be updated with what the program thinks it is.</p>
+
+				<p>For best results, numbers should stretch top to bottom, occupying most of the vertical space in the box.</p>
+
+				<p>For technical details, see the blog post.</p>
+			</div>
+
+		</div>
 	</body>
 </html>
 
